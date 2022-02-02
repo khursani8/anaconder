@@ -1,0 +1,24 @@
+version: "3.3"
+
+services:
+  dev:
+      stdin_open: true
+      tty: true
+      build: .
+      image: continuumio/miniconda3
+      expose:
+        - "9999"
+      # environment:
+      #   - test=test
+      volumes:
+        - ./src/:/home/src/:rw
+        - ./data/:/home/data/:rw
+        - ./nbs/:/home/nbs/:rw
+        # keep in sync with deploy/docker-entrypoint.d/30-copy-static-data.sh
+        - source: static
+          target: /opt/conda
+          type: volume
+          volume:
+            nocopy: true
+volumes:
+  static: {}
