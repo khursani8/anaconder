@@ -1,0 +1,1 @@
+export PATH=$PATH:$(dirname "$(find ~/.vscode-server/bin/ -name code)")
