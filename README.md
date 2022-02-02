@@ -17,4 +17,4 @@ In docker-compose.yml under volumes can add your new folder "- ./src/:/home/src/
 Uncomment environment field and add your new environment variable
 
 ### open port
-Add new port number under EXPOSE field
+Add new port number under 'expose' field
