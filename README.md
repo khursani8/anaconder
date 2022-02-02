@@ -21,6 +21,9 @@ Uncomment environment field and add your new environment variable
 ### open port
 Add new port number under 'expose' field
 
+### Increase shared memory
+Change 'shm_size'
+
 ### Open folder in container using vscode
 https://code.visualstudio.com/docs/remote/containers
 
