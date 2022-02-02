@@ -20,3 +20,9 @@ Uncomment environment field and add your new environment variable
 
 ### open port
 Add new port number under 'expose' field
+
+### Open folder in container using vscode
+https://code.visualstudio.com/docs/remote/containers
+
+### Attach container using vscode
+https://code.visualstudio.com/docs/remote/attach-container
