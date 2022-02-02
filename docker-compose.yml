@@ -5,7 +5,6 @@ services:
       stdin_open: true
       tty: true
       build: .
-      image: continuumio/miniconda3
       expose:
         - "9999"
       # environment:
@@ -19,6 +18,11 @@ services:
           target: /opt/conda
           type: volume
           volume:
-            nocopy: true
+            nocopy: false
+      deploy:
+        resources:
+          reservations:
+            devices:
+            - capabilities: [gpu]
 volumes:
   static: {}
