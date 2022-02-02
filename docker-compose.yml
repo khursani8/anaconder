@@ -11,9 +11,9 @@ services:
       # environment:
       #   - test=test
       volumes:
-        - ./src/:/home/src/:rw
-        - ./data/:/home/data/:rw
-        - ./nbs/:/home/nbs/:rw
+        - ./src/:/root/src/:rw
+        - ./data/:/root/data/:rw
+        - ./nbs/:/root/nbs/:rw
         # keep in sync with deploy/docker-entrypoint.d/30-copy-static-data.sh
         - source: static
           target: /opt/conda
