@@ -1,6 +1,8 @@
 ## Persistent Anaconda environment in docker
 
-I use it for windows pc because I want to play game and do deeplearning in this pc
+I use it for windows pc because I want to play game and do deeplearning in this pc without installing any dev stuff in my windows pc
+GPU work fine for me btw ;)
+
 Tested on Windows 11 with WSL2 enabled
 
 ### How to use:
